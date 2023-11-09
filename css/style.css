@@ -12,10 +12,10 @@ html {
 }
 
 :root {
-    --color__primario: #ffffff;
-    --color__secundario: #020A35;
-    --color__terciario: #FF2E8D;
-    --color__cuarto: #12183d;
+    --color__primario: #000000;
+    --color__secundario: #E9F6F7;
+    --color__terciario: #31AAB3;
+    --color__cuarto: #01626b;
     --type: 'Arimo', sans-serif;
 }
 
