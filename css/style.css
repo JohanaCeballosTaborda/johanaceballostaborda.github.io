@@ -1,738 +1,715 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
-*{
-    margin: 0em;
-    padding: 0em;
-    box-sizing: border-box;
-    font-family: var(--type) ;
-    text-decoration: none;
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  text-decoration: none;
 }
 
 :root {
-    --color__primario: #000000;
-    --color__secundario: #E9F6F7;
-    --color__terciario: #31AAB3;
-    --color__cuarto: #01626b;
-    --type: 'Arimo', sans-serif;
+  --color__primario: #000000;
+  --color__secundario: #31aab3;
+  --color__terciario: #01454b;
+  --color__cuarto: #e9f6f7;
+  --type: "Arimo", sans-serif;
 }
 
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 body {
-    background-color: var(--color__cuarto);  
+  background-color: var(--color__cuarto);
 }
 
 /*header*/
 
-.container{
-    display: flex;
-    width: 70%;
-    max-width: 1700px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+.container {
+  display: flex;
+  width: 70%;
+  max-width: 1700px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-
-.navegador__header img{
-    width:90%
+.navegador__header img {
+  width: 90%;
 }
 nav {
-    background-color: var(--color__secundario);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    border-bottom: 2px solid  var(--color__terciario);
+  background-color: var(--color__secundario);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 2px solid var(--color__terciario);
 }
 
 nav .nav {
-    padding: .5em 0em;
+  padding: 0.5em 0em;
 }
-
 
 nav .container ul li {
-    display: inline;
-    padding: .2em;
+  display: inline;
+  padding: 0.2em;
 }
 
-nav .container ul li a{
-    font-size: 1em;
-    color: var(--color__primario);
-    padding: .5em 1em;
-    border-radius: 10px;
-    font-weight: 600;
+nav .container ul li a {
+  font-size: 1em;
+  color: var(--color__terciario);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
-nav .container ul li a:hover{
-    color: var(--color__terciario);
-    background-color:var(--color__cuarto);
+nav .container ul li a:hover {
+  color: var(--color__terciario);
+  background-color: var(--color__cuarto);
 }
 
 /*seccion 1*/
 .bienvenida {
-    background-color: var(--color__cuarto); 
-    display: flex;
-    align-items: center;
-    padding: 2em 11em ;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-    
+  padding-top: 5em;
+  background-color: var(--color__cuarto);
+  display: flex;
+  align-items: center;
+  padding: 5em 11em 0em 11em;
+  flex-direction: row;
+  justify-content: center;
 }
 
-    /*foto*/
+/*foto*/
 .bienvenida img {
-    width: 70%;
-    padding:1em;
-    border-radius: 100%; 
-    margin-top:3em ;
-  }
+  width: 70%;
+  padding: 1em;
+  border-radius: 140px;
+  margin-top: 1.5em;
+}
 
-    /*texto*/
+/*texto*/
 .bienvenida .acerca_de_mi {
-    text-align: center;    
-    width: 100%;
-    padding-top:5em;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .bienvenida .acerca_de_mi h1 {
-    padding-bottom: .5em;
-    color: var(--color__terciario);
-    font-size: 1.5em;
+  padding-bottom: 0.5em;
+  color: var(--color__secundario);
+  font-size: 2em;
+  font-weight: 800;
 }
-
 
 .bienvenida .acerca_de_mi p {
-
-    padding-bottom: 2em;
-    text-align: justify;
-    padding: 1em;
-    color: var(--color__primario);
-    font-size: 1.2em;
-   }
-
-    /*botones seccion 1*/
-.bienvenida .acerca_de_mi .botones{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 1em;
-   margin-top: 3em;
-   flex-wrap:wrap;
-   font-size: 1em;
+  padding-bottom: 2em;
+  text-align: justify;
+  padding: 1em;
+  color: var(--color__primario);
+  font-size: 1.1em;
 }
 
-.bienvenida .acerca_de_mi .botones a{
-    font-size: 1em;
-    color: var(--color__primario);
-    padding: .5em 1em;
-    border-radius: .8em;
-    background-color: var(--color__secundario);
-    font-weight: 500;
-    flex: none;
-    border:1px solid var(--color__secundario) ;
+/*botones seccion 1*/
+.bienvenida .acerca_de_mi .botones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 4em;
+  flex-wrap: wrap;
+  font-size: 1em;
 }
 
-.bienvenida .acerca_de_mi .botones a:hover{
-    
-    color: var(--color__terciario);
-    background-color: var(--color__cuarto);
-    border:1px solid var(--color__terciario) ;
-    
-    
+.bienvenida .acerca_de_mi .botones a {
+  font-size: 1em;
+  color: var(--color__primario);
+  padding: 0.5em 1em;
+  border-radius: 0.8em;
+  background-color: var(--color__secundario);
+  font-weight: 500;
+  flex: none;
+  border: 1px solid var(--color__secundario);
 }
 
+.bienvenida .acerca_de_mi .botones a:hover {
+  color: var(--color__terciario);
+  background-color: var(--color__cuarto);
+  border: 1px solid var(--color__terciario);
+}
+/*FLECHA ANIMADA*/
+.animacion {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color__cuarto);
+  padding-bottom: 2.6em;
+  padding-top: 3em;
+}
 
-  /*SECCION 2*/
+.animacion a {
+  color: var(--color__terciario);
+}
+
+/*SECCION 2*/
 
 .servicios {
-    background-color: var(--color__secundario);
-    padding: 5em 6em 5em 6em;
-    height: 100vh;
+  background-color: var(--color__secundario);
+  padding: 3em 6em 4.5em 6em;
 }
 
-.servicios img{
-    width: 50%;
-    
+.servicios img {
+  width: 50%;
 }
 
 .servicios .mis_servicios {
-    margin-top: 3.1em;
-    padding-top: 1.8em;
-    width: 100%;
-    text-align: center ;
-    
+  margin-top: 3.1em;
+  padding-top: 1.8em;
+  width: 100%;
+  text-align: center;
 }
 
-.servicios .mis_servicios h1{
-    padding-bottom: 1em;
-    font-size: 1.5em;
-    color: var(--color__terciario);
+.servicios .mis_servicios h1 {
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: var(--color__cuarto);
+  font-weight: 800;
 }
 
-.servicios .mis_servicios p{
-    color: var(--color__primario);
-    padding: 0em 2em;
-    font-size: 1.1em;
-    text-align: left;
-}   
+.servicios .mis_servicios p {
+  color: var(--color__primario);
+  padding: 0em 2em;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 600;
+}
 
 .servicios .fotos_portafolio {
-       color: var(--color__terciario);
-       display: flex;
-       justify-content: space-evenly;
-       text-align: center;
-       font-size: .5em;
-       margin: 2em;     
+  color: var(--color__cuarto);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5em;
+  margin: 2em;
 }
 
+.servicios .fotos_portafolio .item h2 {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-size: 2.1em;
+}
 
-.servicios .fotos_portafolio .item h2{
-    padding-top:2em ;
-    padding-bottom: .5em;
-    font-size: 2.1em;
- }
+.servicios .fotos_portafolio .item p {
+  color: var(--color__primario);
+  padding: 1em;
+  font-size: 1.7em;
+  text-align: justify;
+}
 
- .servicios .fotos_portafolio .item p{
-    color: var(--color__primario);
-    padding: 1em;
-    font-size: 1.7em;
-    text-align: left;
- }
+.servicios .fotos_portafolio .item.item.fotos2 {
+  padding-top: 3em;
+}
 
-  /*SECCION 3*/
+/*SECCION 3*/
 .trabajos {
-    padding-top: 6.3em;
-    padding-bottom: 4.5em;
-    background-color: var(--color__cuarto);
-    text-align: center;
-    height: 100vh;
+  padding-top: 6.3em;
+  padding-bottom: 4.5em;
+  background-color: var(--color__cuarto);
+  text-align: center;
 }
 
-.trabajos .mis_trabajos h1{
-    padding-bottom: 1em;
-    padding-top: 1em;
-    font-size: 1.5em;
-    color: var(--color__terciario);
-    
-}
- /*FLECHA ANIMADA*/
- .animacion2{
-     padding: .8em 0em;
-     font-size: .8em;
- }
- .animacion2 a{
-     color: var(--color__terciario)
+.trabajos .mis_trabajos h1 {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-size: 2em;
+  color: var(--color__secundario);
+  font-weight: 800;
 }
 
+/**SLIDERS**/
 
-            /**SLIDERS**/
+.swiper {
+  width: 90%;
+  height: 90%;
+}
 
-            .swiper {
-                width: 90%;
-                height: 90%;
-            }
+.swiper-slide {
+  text-align: center;
+  font-size: 1.3em;
+  background: var(--color__cuarto);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-            .swiper-slide {
-                text-align: center;
-                font-size: 1.1em;
-                background: var(--color__cuarto);
-                /* Center slide text vertically */
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-            }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-            .swiper-slide img {
-                display: block;
-                width: 60%;
-                height: 60%;
-                object-fit: cover;
-            }
+.swiper-slide {
+  width: 100%;
+}
 
-            .swiper-slide {
-                width: 100%;
-            }
+.swiper-slide:nth-child(2n) {
+  width: 100%;
+}
 
-            .swiper-slide:nth-child(2n) {
-                width: 100%;
-            }
+.swiper-slide:nth-child(3n) {
+  width: 100%;
+}
 
-            .swiper-slide:nth-child(3n) {
-                width: 100%;
-            }
+/**FIN SLIDERS**/
 
-            /**FIN SLIDERS**/
+/*SECCION 4*/
 
-
-  /*SECCION 4*/
-
-         /*contactame*/
-.contacto{
-    padding: 2.5em 6em 3em 6em;
-    background-color: var(--color__secundario);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+/*contactame*/
+.contacto {
+  padding: 2.5em 6em 3em 6em;
+  background-color: var(--color__secundario);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .contacto h1 {
-    margin:1em 0em ;
-    color: var(--color__terciario);
-    font-size: 1.5em;
+  margin: 1em 0em;
+  color: var(--color__cuarto);
+  font-size: 2.2em;
 }
-.contacto p{
-    color: var(--color__primario);
-    text-align: left;
+.contacto p {
+  color: var(--color__primario);
+  text-align: center;
+  font-weight: 600;
 }
 
-    /*telefono, email, redes*/
+/*telefono, email, redes*/
 .contacto .informacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2em;
-    color: var(--color__terciario);
-    flex-wrap:wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  color: var(--color__terciario);
+  flex-wrap: wrap;
 }
-.contacto .informacion .item1{
-    display: flex;
-    margin: 0em 2em;
-   
-}
-
-.contacto .informacion .redes{
-    display: block;
+.contacto .informacion .item1 {
+  display: flex;
+  margin: 0em 2em;
 }
 
-
+.contacto .informacion .redes {
+  display: block;
+}
 
 .contacto .informacion h2 {
-    color: var(--color__terciario);
-    font-size: 1.2em;
-    
-    
-  }
-  
-    /*botones*/
-
-.contacto .instagramyfb{
-    display: flex;
-    justify-content:center;
-
+  color: var(--color__cuarto);
+  font-size: 1.2em;
 }
 
-.contacto .instagramyfb a{
-    color: var(--color__primario);
-    padding: .7em;
+/*botones*/
+
+.contacto .instagramyfb {
+  display: flex;
+  justify-content: center;
 }
 
+.contacto .instagramyfb a {
+  color: var(--color__primario);
+  padding: 0.7em;
+}
 
 /*mapa y mensaje*/
 
-.escribeme{
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap;
+.escribeme {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.escribeme .mensaje{
-    width: 30%;
-    margin: 0em 1em;
+.escribeme .mensaje {
+  width: 30%;
+  margin: 0em 1em;
 }
 
 .mensaje h4 {
-    padding: .5em 1em;
-    margin: 1em;
-    text-align: left;
-    font-size: .8em;
-    background-color: var(--color__primario);
+  padding: 0.5em 1em;
+  margin: 1em;
+  text-align: left;
+  font-size: 0.8em;
+  background-color: var(--color__primario);
 }
 
 .mensaje h3 {
-    padding:  3em 1em;
-    margin: 1em;
-    text-align: left;
-    font-size: .8em;
-    background-color: var(--color__primario);
+  padding: 3em 1em;
+  margin: 1em;
+  text-align: left;
+  font-size: 0.8em;
+  background-color: var(--color__primario);
 }
 
 .mensaje h2 {
+  padding: 1em;
+  margin: 1em;
+  background-color: var(--color__terciario);
+  font-size: 0.8em;
+}
+
+.mensaje h2 a {
+  color: var(--color__secundario);
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /*HEADER*/
+  .container {
+    width: 90%;
+  }
+
+  nav .container ul li a {
+    font-size: 1em;
+  }
+  .navegador__header img {
+    width: 70%;
+  }
+
+  /*seccion 1*/
+  .bienvenida img {
+    width: 80%;
+    margin: 7em 0.5em;
+  }
+
+  .bienvenida {
+    padding: 1em 2em 0em 2em;
+  }
+
+  .bienvenida .acerca_de_mi h1 {
+    padding-bottom: 0.5em;
+    font-size: 2em;
+  }
+
+  .bienvenida .acerca_de_mi p {
+    font-size: 1.3em;
+    padding-bottom: 0em;
+  }
+
+  .bienvenida .acerca_de_mi .botones a {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .animacion {
+    padding-top: 2em;
+  }
+  /*seccion 2*/
+  .servicios {
+    padding: 3em 4em 6em 4em;
+  }
+
+  .servicios img {
+    padding-top: 6em;
+  }
+  .servicios .mis_servicios p {
+    font-size: 1.2em;
     padding: 1em;
-    margin: 1em;
-    background-color: var(--color__terciario);
-    font-size: .8em;
+    text-align: justify;
+  }
+
+  .servicios .mis_servicios h1 {
+    padding-bottom: 0em;
+    font-size: 2em;
+  }
+
+  .servicios .fotos_portafolio .item h2 {
+    font-size: 3em;
+  }
+
+  .servicios .fotos_portafolio .item p {
+    font-size: 2.2em;
+    text-align: left;
+  }
+
+  /*seccion 3*/
+  .trabajos {
+    padding-top: 6em;
+    padding-bottom: 8em;
+  }
+  .swiper-slide img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .trabajos .mis_trabajos h1 {
+    font-size: 2em;
+  }
+
+  /*seccion 4*/
+  .contacto {
+    padding: 3em 4em 6em 4em;
+  }
+  .contacto h1 {
+    font-size: 2em;
+  }
+  .contacto p {
+    font-size: 1.2em;
+  }
+
+  .contacto .informacion {
+    font-size: 1.2em;
+  }
 }
-
-.mensaje h2 a{
-    color: var(--color__secundario);
-}
-
- /* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
- @media (min-width: 768px) and (max-width: 1024px)  {
-    
-    /*HEADER*/
-    .container{
-        width: 90%;
-    }
-    
-    nav .container ul li a{
-        font-size: 1em;
-       
-    }
-    .navegador__header img{
-        width:70%
-    }
-
-
-    /*seccion 1*/
-    .bienvenida img {
-        width: 80%;
-        margin:7em .5em;
-    }
-    
-    .bienvenida {
-        padding: 1em 2em 0em 2em;
-    }
-
-    .bienvenida .acerca_de_mi h1 {
-        padding-bottom: .5em;
-        font-size: 2em;
-    }
-    
-    
-    .bienvenida .acerca_de_mi p {
-        font-size: 1.3em;
-        padding-bottom: 0em;
-    }
-    
-    .bienvenida .acerca_de_mi .botones a{
-        font-size: 1.5em;
-        margin-bottom: .3em;
-        
-    }
-
-    /*seccion 2*/
-    .servicios {
-        padding: 3em 4em 6em 4em;
-    }
-
-    .servicios img{
-        padding-top:6em;
-    }
-    .servicios .mis_servicios p{
-        font-size:1.2em;
-        padding: 1em;
-        text-align: justify;
-    }   
-
-    .servicios .mis_servicios h1{
-        padding-bottom: 0em;
-        font-size: 2em;
-    }
-    
-
-    .servicios .fotos_portafolio .item h2{
-        font-size: 3em;
-     }
-    
-     .servicios .fotos_portafolio .item p{
-        font-size: 2.2em;
-        text-align: left;
-     }
-
-    /*seccion 3*/
-    .trabajos {
-        padding-top: 6em;
-        padding-bottom: 8em;
-    }
-        .swiper-slide img {
-        width: 90%;
-        height: 90%;
-    }
-
-    .trabajos .mis_trabajos h1{
-        font-size: 2em;
-    }
-
-    /*seccion 4*/
-        .contacto{
-            padding: 3em 4em 6em 4em;
-        }
-        .contacto h1{
-        font-size: 2em;
-        }
-        .contacto p{
-            font-size:1.2em;
-        }
-
-        .contacto .informacion {
-            font-size:1.2em;
-        }
-
- }
-
 
 /* ##Dispositivo = Tablets, Mobiles de cpx a 767px */
 @media (min-width: 481px) and (max-width: 767px) {
+  /*header*/
 
-    /*header*/
+  .container {
+    width: 70%;
+  }
 
-    .container{
-        width: 70%;
-        }
+  .navegador__header img {
+    width: 100%;
+  }
 
-        .navegador__header img{
-            width:100%
-        }
+  nav .container ul li a {
+    font-size: 0.7em;
+    padding-left: 4em;
+  }
 
-        nav .container ul li a{
-            font-size: .7em;
-            padding-left:4em;
-        }
+  /*seccion 1*/
+  .bienvenida {
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-        /*seccion 1*/
-        .bienvenida {
-            padding: 2em;
-            flex-direction:column;
-            justify-content: center;
-            
-        }
+  .bienvenida img {
+    width: 65%;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 4.5em;
+  }
+  .bienvenida .acerca_de_mi {
+    padding-top: 0em;
+  }
 
-        .bienvenida img {
-            width: 65%;
-            text-align: center;
-            margin-top: 2em;
-            margin-left: 4.5em;
-        }
-        .bienvenida .acerca_de_mi {
-            padding-top:0em;
-        }
+  .bienvenida .acerca_de_mi h1 {
+    padding-bottom: 0.5em;
+    font-size: 1em;
+  }
 
-        .bienvenida .acerca_de_mi h1 {
-            padding-bottom: .5em;
-            font-size: 1em;
-        }
-        
-        .bienvenida .acerca_de_mi p {
-            padding-bottom: 0em;
-            font-size:1em;
-        }
+  .bienvenida .acerca_de_mi p {
+    padding-bottom: 0em;
+    font-size: 1em;
+  }
 
-        .bienvenida .acerca_de_mi .botones{
-           margin-top: 1em;
-           font-size:.8em;
-        }
+  .bienvenida .acerca_de_mi .botones {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
 
-         .animacion{
-             padding-top: 0em;
-             padding-bottom: 1em;
-         }
-    /*seccion 2*/
-        .servicios {
-            background-color: var(--color__secundario);
-            padding: 3em 1em 7em 1em;
-        }
+  .animacion {
+    padding-top: 0em;
+    padding-bottom: 1em;
+  }
+  /*seccion 2*/
+  .servicios {
+    background-color: var(--color__secundario);
+    padding: 3em 1em 7em 1em;
+  }
 
-        .servicios img{
-            width: 70%;
-        }
+  .servicios img {
+    width: 70%;
+  }
 
-        .servicios .mis_servicios h1{
-            padding-bottom: 0em;
-            font-size: 1.5em;
-        }
-        
-        .servicios .mis_servicios p{
-            padding: 2em 2em;
-            font-size:1.2em;
-            text-align: justify;
-        }
+  .servicios .mis_servicios h1 {
+    padding-bottom: 0em;
+    font-size: 1.5em;
+  }
 
-        .servicios .fotos_portafolio .item h2{
-            font-size: 2.3em;
-         }
-        
-         .servicios .fotos_portafolio .item p{
-            font-size: 1.9em;
-            text-align:left;
-         }
-        
-    /*seccion 3*/
-        .trabajos {
-        padding: 16em 0em;
-        }
+  .servicios .mis_servicios p {
+    padding: 2em 2em;
+    font-size: 1.2em;
+    text-align: justify;
+  }
 
-        .trabajos .mis_trabajos h1{
-            padding-bottom: 1em;
-        }
+  .servicios .fotos_portafolio .item h2 {
+    font-size: 2.3em;
+  }
 
-        .swiper-slide img {
-            width: 80%;
-            height: 80%;
-        }
-    /*seccion 4*/
+  .servicios .fotos_portafolio .item p {
+    font-size: 1.9em;
+    text-align: left;
+  }
 
-    .contacto{
-        padding: 2.5em 1em 1em 1em;
-    }
+  /*seccion 3*/
+  .trabajos {
+    padding: 16em 0em;
+  }
 
-    .contacto h1 {
-        font-size: 1.5em;
-        }
+  .trabajos .mis_trabajos h1 {
+    padding-bottom: 1em;
+  }
 
-    .contacto .informacion h2 {
-        padding-top: 1em;
-        font-size: .9em;
-    }
-    
-    .contacto .informacion p {
-        font-size: .8em;
-    }
+  .swiper-slide img {
+    width: 80%;
+    height: 80%;
+  }
+  /*seccion 4*/
 
-    .escribeme .mensaje{
-        width: 100%;
-    }
+  .contacto {
+    padding: 2.5em 1em 1em 1em;
+  }
+
+  .contacto h1 {
+    font-size: 1.5em;
+  }
+
+  .contacto .informacion h2 {
+    padding-top: 1em;
+    font-size: 0.9em;
+  }
+
+  .contacto .informacion p {
+    font-size: 0.8em;
+  }
+
+  .escribeme .mensaje {
+    width: 100%;
+  }
 }
-
 
 /* ##Dispositivo = Smartphones de 320px a 479px */
 @media (min-width: 320px) and (max-width: 480px) {
-    .container{
-        width: 70%;
-        }
+  .container {
+    width: 70%;
+  }
 
-        .navegador__header img{
-            width:100%
-        }
+  .navegador__header img {
+    width: 100%;
+  }
 
-        nav .container ul li a{
-            font-size: .7em;
-            padding-left:4em;
-        }
+  nav .container ul li a {
+    font-size: 0.7em;
+    padding-left: 4em;
+  }
 
-        /*seccion 1*/
-        .bienvenida {
-            padding: 2.5em 1em;
-            flex-direction:column;
-            justify-content: center;
-            
-        }
+  /*seccion 1*/
+  .bienvenida {
+    padding: 2.5em 1em;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-        .bienvenida img {
-            width: 50%;
-            text-align: center;
-            margin-left: 4.5em;
-        }
-        .bienvenida .acerca_de_mi {
-            padding-top:0em;
-        }
+  .bienvenida img {
+    width: 50%;
+    text-align: center;
+    margin-left: 4.5em;
+  }
+  .bienvenida .acerca_de_mi {
+    padding-top: 0em;
+  }
 
-        .bienvenida .acerca_de_mi h1 {
-            padding-bottom: .5em;
-            font-size: .9em;
-        }
-        
-        .bienvenida .acerca_de_mi p {
-            padding-bottom: 0em;
-            font-size:.6em;
-        }
+  .bienvenida .acerca_de_mi h1 {
+    padding-bottom: 0.5em;
+    font-size: 0.9em;
+  }
 
-        .bienvenida .acerca_de_mi .botones{
-           margin-top: .5em;
-           font-size:.6em;
-        }
-        .animacion{
-            padding-top: 0em;
-            padding-bottom: 1em;
-        }
-    /*seccion 2*/
-        .servicios {
-            background-color: var(--color__secundario);
-            padding: 1em;
-        }
-        .servicios img{
-            width: 65%;
-        }
+  .bienvenida .acerca_de_mi p {
+    padding-bottom: 0em;
+    font-size: 0.6em;
+  }
 
-        .servicios .mis_servicios h1{
-            padding: 0em;
-            font-size: 1em;
-        }
-        
-        .servicios .mis_servicios p{
-            padding: 1em;
-            font-size:.8em;
-            text-align: justify;
-        }
+  .bienvenida .acerca_de_mi .botones {
+    margin-top: 0.5em;
+    font-size: 0.6em;
+  }
+  .animacion {
+    padding-top: 0em;
+    padding-bottom: 1em;
+  }
+  /*seccion 2*/
+  .servicios {
+    background-color: var(--color__secundario);
+    padding: 1em;
+  }
+  .servicios img {
+    width: 65%;
+  }
 
-        .servicios .fotos_portafolio .item h2{
-            font-size: 1.5em;
-         }
-        
-         .servicios .fotos_portafolio .item p{
-            font-size: 1.2em;
-            text-align:left;
-         }
-    /*seccion 3*/
-         .trabajos {
-             padding: 11em 0em;
-         }
+  .servicios .mis_servicios h1 {
+    padding: 0em;
+    font-size: 1em;
+  }
 
-        .trabajos .mis_trabajos h1{
-            padding-bottom: 1em;
-            font-size: 1em;
-        }
-        
+  .servicios .mis_servicios p {
+    padding: 1em;
+    font-size: 0.8em;
+    text-align: justify;
+  }
 
-        .swiper-slide img {
-            width: 95%;
-            height: 95%;
-        }
-    /*seccion 4*/
+  .servicios .fotos_portafolio .item h2 {
+    font-size: 1.5em;
+  }
 
-    .contacto{
-        padding: 3em 1em 1em 1em;
-    }
+  .servicios .fotos_portafolio .item p {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  /*seccion 3*/
+  .trabajos {
+    padding: 11em 0em;
+  }
 
-    .contacto h1 {
-        font-size: 1em;
-    }
+  .trabajos .mis_trabajos h1 {
+    padding-bottom: 1em;
+    font-size: 1em;
+  }
 
+  .swiper-slide img {
+    width: 95%;
+    height: 95%;
+  }
+  /*seccion 4*/
 
-    .contacto p {
-      text-align: justify;
-      font-size:.8em
-    }
+  .contacto {
+    padding: 3em 1em 1em 1em;
+  }
 
-    .contacto .informacion h2 {
-        padding-top: 1em;
-        font-size: .9em;
-    }
-    
-    .contacto .informacion p {
-        font-size: .8em;
-    }
+  .contacto h1 {
+    font-size: 1em;
+  }
 
-    .escribeme .mensaje{
-        width: 100%;
-    }
+  .contacto p {
+    text-align: justify;
+    font-size: 0.8em;
+  }
+
+  .contacto .informacion h2 {
+    padding-top: 1em;
+    font-size: 0.9em;
+  }
+
+  .contacto .informacion p {
+    font-size: 0.8em;
+  }
+
+  .escribeme .mensaje {
+    width: 100%;
+  }
 }
 
 
